@@ -3,11 +3,11 @@ import javax.swing.*;
 import java.awt.*;
 import javax.swing.event.*;
 import java.awt.event.*;
-class myPanel extends JPanel
+class myPanel1 extends JPanel
 {
     JLabel lblMsg;
 
-    myPanel()
+    myPanel1()
     {
         setLayout(new BorderLayout());
 
@@ -35,13 +35,13 @@ class myPanel extends JPanel
         });
     }
 }
-class SF extends JFrame
+class SF1 extends JFrame
 {
-    SF()
+    SF1()
     {
         setSize(500,400);
         setTitle("Star of Manish");
-        myPanel panel = new myPanel();
+        myPanel1 panel = new myPanel1();
         Container cp = getContentPane();
         cp.add(panel);
     }
@@ -50,7 +50,7 @@ class javaBorder
 {
     public static void main(String[] args)
     {
-            SF obj = new SF();
+            SF1 obj = new SF1();
             
             obj.show();
             obj.setDefaultCloseOperation(3);
